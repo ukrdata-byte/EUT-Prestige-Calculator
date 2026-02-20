@@ -25,7 +25,7 @@ print("/// EUT Prestige Calculator ///".center(width))
 def format_number(n):
     if n < 1000:
         return str(n)
-    for unit in ['K', 'M', 'B', 'T', 'Qd', 'Qa', 'Qi', 'Qn', 'Sx', 'Sp', 'Oc', 'No', 'De', 'UDe', 'DDe', 'TDe']:
+    for unit in ['K', 'M', 'B', 'T', 'Qd', 'Qn', 'Sx', 'Sp', 'Oc', 'No', 'De', 'UDe', 'DDe', 'TDe', 'QdDe', 'QnDe', 'SxDe', 'SpDe', 'OcDe', 'NoDe', 'Vt', 'UVt', 'DVt', 'TVt', 'QdVt', 'QnVt', 'SxVt', 'SpVt', 'OcVt', 'NoVt', 'Tg', 'UTg', 'DTg', 'TTg', 'QdTg', 'QnTg', 'SxTg', 'SpTg', 'OcTg', 'NoTg', 'qg', 'Uqg', 'Dqg', 'Tqg', 'Qdqg', 'Qnqg', 'Sxqg', 'Spqg', 'Ocqg', 'Noqg', 'Qg', 'UQg', 'DQg', 'TQg', 'QdQg', 'QnQg', 'SxQg', 'SpQg', 'OcQg', 'NoQg', 'sg', 'Usg', 'Dsg', 'Tsg', 'Qdsg', 'Qnsg', 'Sxsg', 'Spsg', 'Ocsg', 'Nosg', 'Sg', 'USg', 'DSg', 'TSg', 'QdSg', 'QnSg', 'SxSg', 'SpSg', 'OcSg', 'NoSg', 'Og', 'UOg', 'DOg', 'TOg', 'QdOg', 'QnOg', 'SxOg', 'SpOg', 'OcOg', 'NoOg', 'Ng', 'UNg', 'DNg', 'TNg', 'QdNg', 'QnNg', 'SxNg', 'SpNg', 'OcNg', 'NoNg', 'Ce', 'UCe']:
         n /= 1000
         if n < 1000:
             return f"{n:.2f}{unit}"
